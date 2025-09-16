@@ -160,7 +160,20 @@ body {
     color: whitesmoke;
     transition: opacity 2s ease-in, visibility 0s;
     animation: showScroll 2s ease-in forwards;
-    animation-delay: 5s;
+    animation-delay: 8s;
+}
+
+#description {
+    padding-top: 10%;
+    padding-right: 1.5%;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    color: whitesmoke;
+    transition: opacity 2s ease-in, visibility 0s;
+    animation: showScroll 2s ease-in forwards;
+    animation-delay: 4s;
 }
 
 .info-heading {

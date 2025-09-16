@@ -164,8 +164,9 @@ body {
 }
 
 #description {
-    padding-top: 10%;
-    padding-right: 1.5%;
+    padding-top: 5%;
+    padding-left: 32%;
+    position: absolute;
     display: flex;
     justify-content: center;
     opacity: 0;

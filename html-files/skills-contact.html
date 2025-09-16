@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lab 03</title>
-        <link rel="stylesheet" href="../lab03.css">
+        <title>Cole Williams - Portfolio</title>
+        <link rel="stylesheet" href="../index.css">
+        <link rel="icon" href="../photos/portfolio.png">
     </head>
     <body>
         <header>
@@ -47,34 +48,45 @@
             <div id="Education">
                 <h1 class="heading">EDUCATION</h1>
                 <hr class="info-hr">
-                <p style="color: whitesmoke">
-                    University of Vermont<br>
-                    Burlington, Vermont<br>
-                    B.S. Computer Science |
-                    <i>Expected May 2028</i><br>
-                    Relevant Coursework: <i>Intermediate Programming, Data Structures and Algorithms, Computer Organization, Discrete Structures</i>
-                </p>
+                <div class="info-div">
+                    <p style="color: whitesmoke">
+                        University of Vermont<br>
+                    </p>
+                    <ul class="list">
+                        <li>Burlington, Vermont</li>
+                        <li>B.S. Computer Science</li>
+                        <li><i>Expected May 2028</i></li>
+                        <li>Relevant Coursework: <i>Intermediate Programming, Data Structures and Algorithms, Computer Organization, Discrete Structures</i></li>
+                    </ul>
+                </div>
             </div>
             <div id="skills">
                 <h1 class="heading">SKILLS</h1>
                 <hr class="info-hr">
-                <p style="color: whitesmoke">
-                    Programming Langauges: Java, JS, Python, Lua, Swift, C++<br>
-                    API: React, React Native, NodeJS<br>
-                    SQL: MySQL, MongoDB
-                </p>
+                <div class="info-div">
+                    <p style="color: whitesmoke">
+                        Programming Langauges: Java, JS, Python, Lua, Swift, C++<br>
+                        API: React, React Native, NodeJS<br>
+                        SQL: MySQL, MongoDB
+                    </p>
+                </div>
             </div>
             <div>
                 <h1 class="heading">WORK EXPERIENCE</h1>
                 <hr class="info-hr">
-                <p style="color: whitesmoke">
-                    University of Vermont:<br>
-                    *Burlington, Vermont<br>
-                    *Orientation Leader<br>
-                    *August 2025<br><br><br>
-                    *Working with a team of roughly 200 other Orientation Leaders, managing groups of new and incoming students<br>
-                    *Using Microsoft Teams to interact with incoming freshmen, and organizing big group meetings throughout the week
-                </p>
+                <div id="info-div">
+                    <p style="color: whitesmoke">
+                        University of Vermont:<br>
+                    </p>
+                    <ul class="list">
+                        <li>Burlington, Vermont</li>
+                        <li>Orienation Leader</li>
+                        <li>August 2025</li>
+                        <br>
+                        <li>Working with a team of roughly 200 other Orienation Leaders, managing groups of new and incoming students</li>
+                        <li>Using Microsoft Teams to interact with incoming freshmen, and organizing big group meetings throughout the week</li>
+                    </ul>
+                </div>
                 <hr class="info-hr">
             </div>
         </section>
@@ -86,7 +98,15 @@
             </ul>
         </section>
         <footer id="footer">
-            <h1 class="info-heading"><a href="../index.html">Go back to projects page</a></h1>
+            <h1 class="skill-heading"><a href="../index.html" class="a"><u>Go back to projects page</u></a></h1>
         </footer>
+
+        <script>
+            document.querySelectorAll('a.a'.forEach(a => {
+                a.addEventListener('click', () => {
+                    a.classList.add('is-visited');
+                });
+            }));
+        </script>
     </body>
 </html>

@@ -180,6 +180,7 @@ body {
     color: whitesmoke;
     font-size: 1.25rem;
     font-family: monospace;
+    margin-left: 2%;
 }
 
 #RASPICO-8-heading {
@@ -248,4 +249,32 @@ body {
 
 #footer{
     padding-top: 15%;
+}
+
+.list {
+    list-style: none;
+    color: whitesmoke;
+}
+
+.info-div {
+    margin-right: 1%;
+    margin-bottom: 5%;
+}
+
+.a {
+    color: lightgray;
+    transition: color 2s, ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.a:hover, .a:visited:hover {
+    color: #a020f0;
+    transform: translateY(-4px) scale(1.05)
+}
+
+.skill-heading {
+    color: whitesmoke;
+    font-size: 3rem;
+    font-family: monospace;
+    margin-left: 2%;
 }

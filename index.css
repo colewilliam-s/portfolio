@@ -164,7 +164,7 @@ body {
 }
 
 #description {
-    padding-top: 5%;
+    padding-top: 20%;
     padding-left: 32%;
     position: absolute;
     display: flex;
@@ -175,6 +175,36 @@ body {
     transition: opacity 2s ease-in, visibility 0s;
     animation: showScroll 2s ease-in forwards;
     animation-delay: 5s;
+}
+
+@media only screen and (max-width: 600px) {
+    #scroll-down {
+        padding-top: 50%;
+        padding-right: 1.5%;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        color: whitesmoke;
+        transition: opacity 2s ease-in, visibility 0s;
+        animation: showScroll 2s ease-in forwards;
+        animation-delay: 8s;
+    }
+
+    #description {
+        padding-top: 34%;
+        padding-left: 5%;
+        font-size: 1rem;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        color: whitesmoke;
+        transition: opacity 2s ease-in, visibility 0s;
+        animation: showScroll 2s ease-in forwards;
+        animation-delay: 5s;
+    }   
 }
 
 .info-heading {

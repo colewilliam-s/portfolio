@@ -160,11 +160,11 @@ body {
     color: whitesmoke;
     transition: opacity 2s ease-in, visibility 0s;
     animation: showScroll 2s ease-in forwards;
-    animation-delay: 8s;
+    animation-delay: 5s;
 }
 
 #description {
-    padding-top: 7.5%;
+    padding-top: 6.5%;
     padding-left: 32%;
     position: absolute;
     display: flex;
@@ -174,12 +174,28 @@ body {
     color: whitesmoke;
     transition: opacity 2s ease-in, visibility 0s;
     animation: showScroll 2s ease-in forwards;
-    animation-delay: 5s;
+    animation-delay: 3s;
 }
 
 @media only screen and (max-width: 600px) {
+    
+    #name-container {
+        display: flex;
+        padding: 0;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        white-space: nowrap;
+        width: fit-content;
+        display: inline-block;
+        font-family: monospace;
+        justify-content: center;
+    }
+    
     #scroll-down {
-        padding-top: 50%;
+        padding-top: 40%;
         padding-right: 1.5%;
         display: flex;
         justify-content: center;
@@ -188,7 +204,7 @@ body {
         color: whitesmoke;
         transition: opacity 2s ease-in, visibility 0s;
         animation: showScroll 2s ease-in forwards;
-        animation-delay: 8s;
+        animation-delay: 5s;
     }
 
     #description {
@@ -203,8 +219,33 @@ body {
         color: whitesmoke;
         transition: opacity 2s ease-in, visibility 0s;
         animation: showScroll 2s ease-in forwards;
-        animation-delay: 5s;
-    }   
+        animation-delay: 3s;
+    }
+    
+    .raspico-8-text {
+        font-family: monospace;
+        font-size: .45rem;
+        /* padding-top: 15%;
+        padding-right: 10%; */
+        color: whitesmoke;
+    }
+
+    .italian-swordsman-text {
+        font-family: monospace;
+        font-size: .45rem;
+        /* padding-top: 15%;
+        padding-right: 10%; */
+        color: whitesmoke;
+    }
+
+    .flo-banking-text {
+        font-family: monospace;
+        font-size: .45rem;
+        /* padding-top: 2%; */
+        /* padding-right: 10%; */
+        color: whitesmoke;
+        list-style: none;
+    }
 }
 
 .info-heading {
@@ -233,10 +274,12 @@ body {
     clear: both;
 }
 
-#raspico-8-text {
+.raspico-8-text {
     font-family: monospace;
     font-size: .85rem;
-    padding-top: 9%;
+    /* padding-top: 15%;
+    padding-right: 10%; */
+    color: whitesmoke;
 }
 
 .project-photo {
@@ -260,20 +303,36 @@ body {
     margin-left: 2%;
 }
 
-#italian-swordsman-text {
+.italian-swordsman-text {
     font-family: monospace;
     font-size: .85rem;
-    padding-top: 15%;
-    padding-right: 10%
+    /* padding-top: 15%;
+    padding-right: 10%; */
+    color: whitesmoke;
 }
 
 #flo-banking {
     margin-left: 5%;
 }
 
-#flo-banking-text {
+.flo-banking-text {
     font-family: monospace;
     font-size: .85rem;
+    /* padding-top: 2%; */
+    /* padding-right: 10%; */
+    color: whitesmoke;
+    list-style: none;
+}
+
+.flo-banking-text-list {
+    font-family: monospace;
+    font-size: .85rem;
+    color: whitesmoke;
+    list-style: none;
+    text-indent: 4%
+}
+
+.top-text {
     padding-top: 5%;
     padding-right: 10%
 }
@@ -308,4 +367,25 @@ body {
     font-size: 3rem;
     font-family: monospace;
     margin-left: 2%;
+}
+
+.projects-list {
+    list-style: none;
+    color: whitesmoke;
+}
+
+#flo-list {
+    color: whitesmoke;
+}
+
+#unfinished {
+    padding-top: 5%
+}
+
+#top-text-swordsman {
+    padding-top: 10%
+}
+
+#top-text-raspico {
+    padding-top: 10%
 }

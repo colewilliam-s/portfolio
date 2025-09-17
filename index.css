@@ -224,7 +224,7 @@ body {
     
     .raspico-8-text {
         font-family: monospace;
-        font-size: .45rem;
+        font-size: .35rem !important;
         /* padding-top: 15%;
         padding-right: 10%; */
         color: whitesmoke;
@@ -232,7 +232,7 @@ body {
 
     .italian-swordsman-text {
         font-family: monospace;
-        font-size: .45rem;
+        font-size: .35rem !important;
         /* padding-top: 15%;
         padding-right: 10%; */
         color: whitesmoke;
@@ -240,11 +240,32 @@ body {
 
     .flo-banking-text {
         font-family: monospace;
-        font-size: .45rem;
+        font-size: .35rem !important;
         /* padding-top: 2%; */
         /* padding-right: 10%; */
         color: whitesmoke;
         list-style: none;
+    }
+
+    .flo-banking-text-list {
+        font-family: monospace;
+        font-size: .35rem !important;
+        color: whitesmoke;
+        list-style: none;
+        text-indent: 4%
+    }
+
+    .info-heading{
+        color: whitesmoke;
+        font-size: .75rem !important;
+        font-family: monospace;
+        margin-left: 2%;
+    }
+
+    .projects-list {
+        list-style: none;
+        color: whitesmoke;
+        padding-left: 0 !important;
     }
 }
 

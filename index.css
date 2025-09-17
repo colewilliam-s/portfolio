@@ -174,7 +174,7 @@ body {
     color: whitesmoke;
     transition: opacity 2s ease-in, visibility 0s;
     animation: showScroll 2s ease-in forwards;
-    animation-delay: 4s;
+    animation-delay: 5s;
 }
 
 .info-heading {

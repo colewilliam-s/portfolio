@@ -26,7 +26,9 @@ body {
     padding-top: 3%;
     padding-bottom: 3%;
     background-color: rgb(0, 0, 0);
-    background: black url(photos/snowing.gif) repeat;
+    background: black url(photos/please-snow.gif) repeat;
+    background-size: 100%;
+    background-position: 50%;
 }
 
 #hr {
@@ -83,20 +85,13 @@ body {
     }
 
     to {
-        width: 100%
+        width: 13.25ch;
     }
 }
 
-@keyframes blink-caret {
-
-    0%,
-    100% {
-        border-color: transparent;
-    }
-
-    50% {
-        border-color: whitesmoke;
-    }
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
 @keyframes showScroll {
@@ -114,15 +109,22 @@ body {
     overflow: hidden;
     color: whitesmoke;
     white-space: nowrap;
-    border-right: 2px solid whitesmoke;
 
     /* animation: typing 2s steps(14, end) forwards; */
 
     animation:
-        typing 2s steps(14, end),
-        blink-caret .4s step-end infinite;
-    animation-fill-mode: forwards;
+        typing 2s steps(14, end) forwards;
     animation-delay: 1.5s;
+}
+
+.cursor {
+    display: inline-block;
+    font-size: 3rem;
+    width: 1ch;
+    animation: blink 1s step-end infinite;
+    background: none;
+    color: whitesmoke;
+    vertical-align: 75%;
 }
 
 #bin-text {
@@ -151,8 +153,7 @@ body {
 }
 
 #scroll-down {
-    padding-top: 10%;
-    padding-right: 1.5%;
+    padding-top: 2%;
     display: flex;
     justify-content: center;
     opacity: 0;
@@ -165,8 +166,6 @@ body {
 
 #description {
     padding-top: 6.5%;
-    padding-left: 32%;
-    position: absolute;
     display: flex;
     justify-content: center;
     opacity: 0;
@@ -195,8 +194,7 @@ body {
     }
     
     #scroll-down {
-        padding-top: 40%;
-        padding-right: 1.5%;
+        padding-top: 4%;
         display: flex;
         justify-content: center;
         opacity: 0;
@@ -209,9 +207,7 @@ body {
 
     #description {
         padding-top: 34%;
-        padding-left: 5%;
         font-size: 1rem;
-        position: absolute;
         display: flex;
         justify-content: center;
         opacity: 0;
@@ -224,32 +220,26 @@ body {
     
     .raspico-8-text {
         font-family: monospace;
-        font-size: .35rem !important;
-        /* padding-top: 15%;
-        padding-right: 10%; */
+        font-size: .5rem !important;
         color: whitesmoke;
     }
 
     .italian-swordsman-text {
         font-family: monospace;
-        font-size: .35rem !important;
-        /* padding-top: 15%;
-        padding-right: 10%; */
+        font-size: .5rem !important;
         color: whitesmoke;
     }
 
     .flo-banking-text {
         font-family: monospace;
-        font-size: .35rem !important;
-        /* padding-top: 2%; */
-        /* padding-right: 10%; */
+        font-size: .45rem !important;
         color: whitesmoke;
         list-style: none;
     }
 
     .flo-banking-text-list {
         font-family: monospace;
-        font-size: .35rem !important;
+        font-size: .4rem !important;
         color: whitesmoke;
         list-style: none;
         text-indent: 4%
@@ -266,6 +256,14 @@ body {
         list-style: none;
         color: whitesmoke;
         padding-left: 0 !important;
+    }
+
+    .project-photo{
+        border-style: solid;
+        border-color: lightgray;
+        border-width: 10px;
+        border-radius: 125px;
+        max-width: 25% !important;
     }
 }
 

@@ -139,11 +139,11 @@ body {
 
 #name-container {
     display: flex;
-    padding: 0;
-    position: absolute;
+    flex-direction: column;
+    align-items: center;
     top: 35%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 50vw;
+    transform: translateX(50%);
     overflow: hidden;
     white-space: nowrap;
     width: fit-content;
@@ -177,13 +177,32 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+
+    #socials {
+        margin: 0;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        background-color: rgb(0, 0, 0);
+        background: black url(photos/please-snow.gif);
+        background-size: fill !important;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+    
+    #hr {
+        margin: 0;
+        padding: 0;
+        height: 25px;
+        background-color: rgb(26, 24, 24);
+        border-style: none;
+        width: 150vw;
+    }
     
     #name-container {
         display: flex;
-        padding: 0;
-        position: absolute;
+        justify-content: center;
         top: 30vh;
-        left: 50vw;
+        left: 60vw;
         transform: translateX(-50vw);
         overflow: hidden;
         white-space: nowrap;
@@ -196,6 +215,7 @@ body {
     #scroll-down {
         padding-top: 4vw;
         display: flex;
+        font-size: 6vw;
         justify-content: center;
         opacity: 0;
         visibility: hidden;
@@ -207,7 +227,7 @@ body {
 
     #description {
         padding-top: 16vh;
-        font-size: 1vw;
+        font-size: 4vw;
         display: flex;
         justify-content: center;
         opacity: 0;

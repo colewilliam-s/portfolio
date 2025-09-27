@@ -300,7 +300,12 @@ body {
     padding-right: 10%; */
     color: whitesmoke;
 }
-
+.project {
+    margin: 40px;
+    padding: 20px;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+}
 .project-photo {
     border-style: solid;
     border-color: lightgray;

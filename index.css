@@ -6,6 +6,14 @@ body {
     scroll-behavior: smooth;
 }
 
+.separator {
+    height: 50vh;
+}
+
+.skills-separator {
+    height: 5vh;
+}
+
 .icon {
     width: 80px;
     height: auto;
@@ -101,6 +109,13 @@ body {
     }
 }
 
+.name-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #name-text {
     font-family: monospace;
     font-size: 3rem;
@@ -127,41 +142,12 @@ body {
     vertical-align: 75%;
 }
 
-#bin-text {
-    font-family: monospace;
-    font-size: 3rem;
-    width: 0;
-    display: inline-block;
-    overflow: hidden;
-    color: whitesmoke;
-    white-space: nowrap;
-}
-
-/* #name-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 35%;
-    left: 50vw;
-    transform: translateX(50%);
-    overflow: hidden;
-    white-space: nowrap;
-    width: fit-content;
-    display: inline-block;
-    font-family: monospace;
-    justify-content: center;
-} */
-
 #name-container {
-    position: absolute;
-    top: 35%;
-    left: 39%;
-    overflow: hidden;
-    white-space: nowrap;
-    width: fit-content;
     display: inline-block;
+    overflow: visible;
+    white-space: nowrap;
+    width: auto;
     font-family: monospace;
-    justify-content: center;
 }
 
 #scroll-down {
@@ -177,7 +163,7 @@ body {
 }
 
 #description {
-    padding-top: 6.5%;
+    /* padding-top: 3%; */
     display: flex;
     justify-content: center;
     opacity: 0;
@@ -210,18 +196,8 @@ body {
         width: 150vw;
     }
     
-    #name-container {
-        display: flex;
-        justify-content: center;
-        top: 30vh;
-        left: 60vw;
-        transform: translateX(-50vw);
-        overflow: hidden;
-        white-space: nowrap;
-        width: fit-content;
-        display: inline-block;
-        font-family: monospace;
-        justify-content: center;
+    .separator {
+        height: 45vh !important;
     }
     
     #scroll-down {
@@ -238,7 +214,6 @@ body {
     }
 
     #description {
-        padding-top: 16vh;
         font-size: 4vw;
         display: flex;
         justify-content: center;
@@ -252,26 +227,26 @@ body {
     
     .raspico-8-text {
         font-family: monospace;
-        font-size: .5vw !important;
+        font-size: 1.95vw !important;
         color: whitesmoke;
     }
 
     .italian-swordsman-text {
         font-family: monospace;
-        font-size: .5vw !important;
+        font-size: 1.95vw !important;
         color: whitesmoke;
     }
 
     .flo-banking-text {
         font-family: monospace;
-        font-size: .45vw !important;
+        font-size: 1.95vw !important;
         color: whitesmoke;
         list-style: none;
     }
 
     .flo-banking-text-list {
         font-family: monospace;
-        font-size: .4vw !important;
+        font-size: 1.5vw !important;
         color: whitesmoke;
         list-style: none;
         text-indent: 4vw
@@ -279,7 +254,7 @@ body {
 
     .info-heading{
         color: whitesmoke;
-        font-size: .75vw !important;
+        font-size: 3vw !important;
         font-family: monospace;
         margin-left: 2%;
     }
@@ -440,3 +415,7 @@ body {
 #top-text-raspico {
     padding-top: 10%
 }
+
+/* position: absolute;
+    top: 35%;
+    left: 39%; */

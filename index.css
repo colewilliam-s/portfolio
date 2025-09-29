@@ -227,34 +227,38 @@ body {
     
     .raspico-8-text {
         font-family: monospace;
-        font-size: 1.95vw !important;
+        font-size: 2.5vw !important;
         color: whitesmoke;
+        margin-left: 1.5vw
     }
 
     .italian-swordsman-text {
         font-family: monospace;
-        font-size: 1.95vw !important;
+        font-size: 2.5vw !important;
         color: whitesmoke;
+        margin-left: 1.5vw
     }
 
     .flo-banking-text {
         font-family: monospace;
-        font-size: 1.95vw !important;
+        font-size: 2.5vw !important;
         color: whitesmoke;
         list-style: none;
+        margin-left: 1.5vw
     }
 
     .flo-banking-text-list {
         font-family: monospace;
-        font-size: 1.5vw !important;
+        font-size: 2.5vw !important;
         color: whitesmoke;
         list-style: none;
-        text-indent: 4vw
+        text-indent: 4vw;
+        margin-left: 1.5vw
     }
 
     .info-heading{
         color: whitesmoke;
-        font-size: 3vw !important;
+        font-size: 3.5vw !important;
         font-family: monospace;
         margin-left: 2%;
     }
@@ -270,8 +274,58 @@ body {
         border-color: lightgray;
         border-width: 10px;
         border-radius: 125px;
-        max-width: 25vw !important;
+        max-width: 75vw !important;
     }
+
+    #submit {
+        display: flex;
+        background-color: whitesmoke;
+        color: rgb(17, 16, 16);
+        width:30vw !important;
+        font-size: 1.75rem !important;
+        font-family: monospace;
+        height: 5vh !important;
+        text-align: center !important;
+        border-radius: 15px;
+        border-width: 2px;
+        border-color: rgb(179, 167, 167);
+    }
+
+    #message {
+        width: 75vw !important;
+        height:fit-content !important;
+    }
+
+    .text-input {
+        background-color: rgb(63, 62, 62);
+        border-radius: 5px;
+        border-width: 2px;
+        border-color: rgb(179, 167, 167);
+        color: whitesmoke;
+        font-family: monospace;
+        display: block;
+        width: 58vw !important;
+        height: 3vh !important;
+        font-size: 1.03rem !important;
+    }
+    
+    .form-text {
+        color: whitesmoke;
+        font-size: 1.5rem !important;
+        font-family: monospace;
+        display: block;
+    }
+
+    .image-with-text img {
+        float:none !important;
+        margin-right: 20px;
+        max-width: 50%;
+        height: auto;
+    }
+}
+
+.skills-contact-text {
+    margin-left: 1.5vw
 }
 
 .info-heading {
@@ -416,6 +470,56 @@ body {
     padding-top: 10%
 }
 
-/* position: absolute;
-    top: 35%;
-    left: 39%; */
+#contact-heading {
+    display: flex !important;
+    text-align: center !important;
+    justify-content: center !important;
+}
+
+.form-text {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-family: monospace;
+    display: block;
+}
+
+.text-input {
+    background-color: rgb(63, 62, 62);
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: rgb(179, 167, 167);
+    color: whitesmoke;
+    font-family: monospace;
+    display: block;
+    width: 15vw;
+}
+
+#message {
+    width: 25vw;
+}
+
+#submit {
+    background-color: whitesmoke;
+    color: rgb(17, 16, 16);
+    width: 12vw;
+    font-size: 1.5vw;
+    font-family: monospace;
+    height: auto;
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: rgb(179, 167, 167);
+}
+
+#contact-form {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-separator {
+    height: 1.5vh;
+}
+
+#separator-a {
+    height: 15vh;
+}

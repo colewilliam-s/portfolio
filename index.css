@@ -10,6 +10,10 @@ body {
     height: 50vh;
 }
 
+.about-separator {
+    height: 15vh;
+}
+
 .skills-separator {
     height: 5vh;
 }
@@ -377,6 +381,21 @@ body {
         max-width: 50%;
         height: auto;
     }
+
+    #photo-table{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    #photo-row {
+        display: contents;
+    }
+
+    #photo-row td {
+        display: block !important;
+        width: 100% !important;
+    }
 }
 
 .skills-contact-text {
@@ -577,4 +596,28 @@ body {
 
 #separator-a {
     height: 15vh;
+}
+
+.my-photos {
+    width: auto;
+    height: 45vh;
+    border-style: solid;
+    border-color: rgb(179, 167, 167);
+    border-width: 3px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+#photo-table {
+    display:flex;
+    justify-content: center;
+}
+
+#about-text {
+    text-align: center;
+}
+
+#about-me-text {
+    color: whitesmoke;
+    font-family: monospace;
 }

@@ -70,7 +70,7 @@ body {
     border-radius: 15px;
     color: whitesmoke;
     font-family: monospace;
-    font-size: 1.15vw;
+    font-size: 1.05vw;
     display: flex;
     width: 9.375vw;
     height: 5vh;
@@ -85,6 +85,7 @@ body {
     height: 25px;
     background-color: rgb(26, 24, 24);
     border-style: none;
+    width: 100vw;
 }
 
 .info-hr {
@@ -238,7 +239,7 @@ body {
     .nav-bar-buttons {
         height: 3vh;
         width: 40vw;
-        font-size: .75rem;
+        font-size: .7rem;
     }
     
     #hr {
@@ -247,7 +248,7 @@ body {
         height: 25px;
         background-color: rgb(26, 24, 24);
         border-style: none;
-        width: 150vw;
+        width: 100vw;
     }
     
     .separator {

@@ -73,8 +73,8 @@ body {
     font-size: .75rem;
     display: flex;
     width: 9.375vw;
-    text-align: center;
     margin: 10px;
+    justify-content: center;
 }
 
 #hr {

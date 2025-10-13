@@ -70,11 +70,13 @@ body {
     border-radius: 15px;
     color: whitesmoke;
     font-family: monospace;
-    font-size: .75rem;
+    font-size: 1.15vw;
     display: flex;
     width: 9.375vw;
-    margin: 10px;
+    height: 5vh;
+    margin: 10vw;
     justify-content: center;
+    align-items: center;
 }
 
 #hr {
@@ -216,13 +218,27 @@ body {
 
     #socials {
         margin: 0;
-        padding-top: 3%;
+        padding-top: 15%;
         padding-bottom: 3%;
         background-color: rgb(0, 0, 0);
         background: black url(photos/please-snow.gif);
         background-size: fill !important;
         background-repeat: no-repeat;
         background-position: center;
+    }
+
+    #nav-bar {
+        margin-top: .5vh;
+        width: 95vw;
+        height: 4vh;
+        margin-left: 1.75vw;
+        margin-bottom: 2vh;
+    }
+
+    .nav-bar-buttons {
+        height: 3vh;
+        width: 40vw;
+        font-size: .75rem;
     }
     
     #hr {

@@ -223,7 +223,7 @@ body {
         background-size: fill !important;
         background-repeat: no-repeat;
         background-position: center;
-}
+    }
     
     #hr {
         margin: 0;
@@ -480,9 +480,9 @@ body {
     transform: translateY(-4px) scale(1.05)
 }
 
-.skill-heading {
+.footer-heading {
     color: whitesmoke;
-    font-size: 3rem;
+    font-size: 1.25rem;
     font-family: monospace;
     margin-left: 2%;
 }

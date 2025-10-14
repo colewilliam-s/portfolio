@@ -89,7 +89,7 @@ body {
     height: 25px;
     background-color: rgb(26, 24, 24);
     border-style: none;
-    width: 100vw;
+    width: 100%;
 }
 
 .info-hr {

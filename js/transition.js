@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             gsap.set('.block', { scaleY: 1});
             gsap.to('.block', {
                 scaleY: 0,
-                duration: 1,
+                duration: .25,
                 stagger:{
                     each: 0.1,
                     from: 'start',
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             gsap.set('.block', { visibility: 'visible', scaleY: 0});
             gsap.to('.block', {
                 scaleY: 1,
-                duration: 1,
+                duration: .25,
                 stagger:{
                     each: 0.1,
                     from: 'start',

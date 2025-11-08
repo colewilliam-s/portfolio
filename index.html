@@ -8,12 +8,28 @@
         <link rel="icon" href="photos/portfolio.png">
     </head>
     <body>
-        <div>
+        <div class="transition">
+            <div class="transition-row row-1">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+            <div class="transition-row row-1">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+        </div>
+        <div class="app">
             <header>
                 <div id="nav-bar-background">
                     <div id="nav-bar">
-                        <button class="nav-bar-buttons" id="go-to-skills">Skills & Info</button>
-                        <button class="nav-bar-buttons" id="go-to-about">About Me</button>
+                        <a class="nav-bar-buttons" id="go-to-skills" href="html-files/skills-contact.html">Skills & Info</a>
+                        <a class="nav-bar-buttons" id="go-to-about" href="html-files/about-me.html">About Me</a>
                     </div>
                 </div>
                 <div id="socials-background">
@@ -103,8 +119,7 @@
                 <h1 class="footer-heading"><a href="html-files/about-me.html" class="a">©Cole Williams</a></h1>
             </footer>
         </div>
-        <script src="js/goToSkills.js"></script>
-        <script src="js/goToAbout.js"></script>
         <script type="module" src="js/particles.js"></script>
+        <script src="js/transition.js"></script>
     </body>
 </html>

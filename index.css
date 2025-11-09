@@ -676,15 +676,16 @@ a {
 
 .transition-row.row-1 .block {
     transform-origin: top;
+    background-image: linear-gradient(to bottom, #736f6f, #000000)
 }
 
 .transition-row.row-2 .block {
     transform-origin: bottom;
+    background-image: linear-gradient(to top, #736f6f, #000000)
 }
 
 .block {
     flex: 1;
-    background-color: #736f6f;
     transform: scaleY(1);
     will-change: transform;
 }

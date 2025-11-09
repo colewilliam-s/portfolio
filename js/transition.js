@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             gsap.set('.block', { scaleY: 1});
             gsap.to('.block', {
                 scaleY: 0,
-                duration: .65,
+                duration: .5,
                 stagger:{
                     each: 0.1,
                     from: 'start',

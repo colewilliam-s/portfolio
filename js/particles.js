@@ -1,3 +1,5 @@
+// logic was written by ehan, but knowing his ahh he probably copied a lot of this
+
 import { Vector2D, magnitude, normalize } from "./vector2D.js";
 
 (() => {
@@ -18,7 +20,7 @@ import { Vector2D, magnitude, normalize } from "./vector2D.js";
         mousePos = new Vector2D(e.clientX, e.clientY);
     });
 
-    const minDist = 100;
+    const minDist = 70;
 
     class Particle {
         constructor() {
@@ -59,7 +61,7 @@ import { Vector2D, magnitude, normalize } from "./vector2D.js";
         }
     }
 
-    const particles = Array.from({ length: 250 }, () => new Particle());
+    const particles = Array.from({ length: 350 }, () => new Particle());
 
     function animate() {
         ctx.fillStyle = "rgb(27, 26, 30)";

@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
     emailjs.sendForm("service_ijlzlwc", "template_k6tjemp", form)
         .then(() => {
-            alert("Message sent successfuly!");
+            alert("Email sent successfuly!");
             form.reset();
         }, (err) => {
                 alert("Failed to send message. " + JSON.stringify(err));

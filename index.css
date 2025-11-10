@@ -480,7 +480,7 @@ html {
 }
 
 #italian-swordsman {
-    margin-left: 2%;
+    margin-left: 3%;
 }
 
 .italian-swordsman-text {
@@ -510,6 +510,26 @@ html {
     color: whitesmoke;
     list-style: none;
     text-indent: 4%
+}
+
+.slurp-slop-text {
+    font-family: monospace;
+    color: whitesmoke;
+    font-size: .85rem;
+    text-decoration: none !important;
+}
+
+.slurp-slop-text::marker {
+    visibility: hidden;
+}
+
+#slurp-slop {
+    margin-left: 3%;
+}
+
+#ul-iguess {
+    padding: 10%;
+    text-decoration: none;
 }
 
 .top-text {

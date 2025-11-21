@@ -516,11 +516,6 @@ html {
     font-family: monospace;
     color: whitesmoke;
     font-size: .85rem;
-    text-decoration: none !important;
-}
-
-.slurp-slop-text::marker {
-    visibility: hidden;
 }
 
 #slurp-slop {
@@ -529,7 +524,7 @@ html {
 
 #ul-iguess {
     padding: 10%;
-    text-decoration: none;
+    list-style: none;
 }
 
 .top-text {

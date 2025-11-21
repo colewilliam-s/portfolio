@@ -565,6 +565,11 @@ html {
     transform: translateY(-4px) scale(1.05) translateX(4px);
 }
 
+.anchor:hover, .anchor:visited:hover {
+    color: #a020f0;
+    transform: translateY(-4px) scale(1.05) translateX(4px);
+}
+
 .footer-heading {
     color: whitesmoke;
     font-size: 1.25rem;

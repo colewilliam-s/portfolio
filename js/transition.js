@@ -6,9 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
             event.preventDefault();
             const href = link.getAttribute("href");
 
-            console.log('please go twin')
             if(href && !href.startsWith('#') && href !== window.location.pathname){
-                console.log('i went twin!')
                 animateTranstion().then(() =>{
                     window.location.href = href;
                 });
@@ -24,10 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if(href && !href.startsWith('#') && href !== window.location.pathname){
                 animateTranstion().then(() => {
                     window.location.href = href;
-                })
-            }
-        })
-    })
+                });
+            };
+        });
+    });
 
     revealTransition().then(() => {
         gsap.set(".block", { visibility: "hidden" });
@@ -54,7 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function animateTranstion() {
         return new Promise((resolve) => {
-            console.log('animate')
             gsap.set('.block', { visibility: 'visible', scaleY: 0});
             gsap.to('.block', {
                 scaleY: 1,
@@ -67,8 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 ease: ease,
                 onComplete: resolve,
-            })
+            });
 
-        })
-    }
-})
+        });
+    };
+});

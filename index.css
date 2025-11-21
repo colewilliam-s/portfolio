@@ -553,6 +553,13 @@ html {
     text-decoration: none;
 }
 
+.anchor {
+    color: lightgray;
+    transition: color 2s, ease, transform 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
 .a:hover, .a:visited:hover {
     color: #a020f0;
     transform: translateY(-4px) scale(1.05) translateX(4px);

@@ -52,14 +52,54 @@ html {
     position: relative;
 }
 
-#particles {
+#meteors {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  display: block;
+  overflow: hidden;
   z-index: 0;
+  pointer-events: none;
+}
+
+.meteor {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5);
+    animation: meteor-fall linear forwards;
+    pointer-events: none;
+}
+
+.meteor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%);
+    transform: translateX(-80px);
+}
+
+@keyframes meteor-fall {
+    0% {
+        transform: translate(0, 0) rotate(-315deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(300px, 300px) rotate(-315deg);
+        opacity: 0;
+    }
 }
 
 #socials {

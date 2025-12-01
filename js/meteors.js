@@ -9,8 +9,8 @@ function createMeteor() {
     meteor.style.left = (Math.random() * 120 - 20) + '%';  // -20% to 100%
     meteor.style.top = (Math.random() * 120 - 20) + '%';   // -20% to 100%
     
-    // Random animation duration (speed)
-    const duration = Math.random() * 2 + 1; // 1-3 seconds
+    // Random animation duration
+    const duration = Math.random() * 3 + 1; // 1-3 seconds
     meteor.style.animationDuration = duration + 's';
     
     meteorsContainer.appendChild(meteor);

@@ -149,5 +149,17 @@
         <script type="module" src="../js/meteors.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
         <script src="../js/transition.js"></script>
+        <script>
+            const form = document.getElementById("form-contact");
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+                let fname = document.getElementById('fname');
+                let email = document.getElementById('email');
+                let subject = document.getElementById('title');
+                localStorage.setItem('n', fname.value);
+                localStorage.setItem('e', email.value);
+                localStorage.setItem('s', subject.value);
+            });
+        </script>
     </body>
 </html>

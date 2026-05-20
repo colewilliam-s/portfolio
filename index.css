@@ -167,6 +167,7 @@ html {
 .heading {
     font-family: monospace;
     font-size: 2rem;
+    text-decoration: underline;
     display: flex;
     justify-content: left;
     margin-left: 1%;
